@@ -1,3 +1,4 @@
+import os
 from sys import argv
 from tempfile import NamedTemporaryFile
 from whitespace.cli import main
@@ -17,12 +18,9 @@ for i in range(len(lines)):
     lines[i] = lines[i].replace(" ", "")
     lines[i] = lines[i].replace("ho", " ")
 
-# Test that the lines match a proper whitespace program
-# with open('hello.ws') as f:
-	
-
 # Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
-with NamedTemporaryFile() as temp_file:
-    for line in lines:
-        temp_file.write(line.encode())
-    main([temp_file.name])
+with open('output.ws', 'w') as f:
+	for line in lines:
+		f.write(line)
+main(['output.ws'])
+os.remove('output.ws')
