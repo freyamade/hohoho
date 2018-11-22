@@ -1,6 +1,5 @@
 import os
 from sys import argv
-from tempfile import NamedTemporaryFile
 from whitespace.cli import main
 
 def hohoho_to_whitespace(file_name):
