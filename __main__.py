@@ -1,6 +1,6 @@
 import argparse
-from hohoho import hohoho_to_whitespace
-from translator import whitespace_to_hohoho
+from .hohoho import hohoho_to_whitespace
+from .translator import whitespace_to_hohoho
 
 parser = argparse.ArgumentParser(description='HoHoHo, the FESTIVE esolang! (powered by whitespace)', prog='hohoho')
 parser.add_argument(
