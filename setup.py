@@ -13,6 +13,7 @@ setup(
     install_requires=[            # I get to this in a second
         'whitespace',
     ],
+    entry_points = {'console_scripts': ['hohoho = hohoho:main']},
     classifiers=[
         'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package
         'Intended Audience :: Developers',      # Define that your audience are developers
