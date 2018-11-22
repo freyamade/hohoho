@@ -18,6 +18,8 @@ for i in range(len(lines)):
     lines[i] = lines[i].replace("ho", " ")
 
 # Test that the lines match a proper whitespace program
+# with open('hello.ws') as f:
+	
 
 # Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
 with NamedTemporaryFile() as temp_file:
