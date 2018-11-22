@@ -1,5 +1,4 @@
 import os
-from sys import argv
 from whitespace.cli import main
 
 def hohoho_to_whitespace(file_name):
