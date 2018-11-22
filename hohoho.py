@@ -8,13 +8,14 @@ file_name = argv[-1]  # Assume for now it's just the last one
 with open(file_name) as input_file:
     lines = input_file.readlines()
 
-# Convert `ho` to space
-# Convert `hohoho` to \t
-# Convert \n to \n
-# Read the file line by line
-# Replace hohoho with \t and ho with ' '
-# Replace ' ' with ''
+# Converts 'hohoho' to \t
+# Converts ' ' to ''
+# Converts 'ho' to ' '
 
+for i in range(len(lines)):
+    lines[i] = lines[i].replace("hohoho", "\t")
+    lines[i] = lines[i].replace(" ", "")
+    lines[i] = lines[i].replace("ho", " ")
 
 # Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
 with NamedTemporaryFile() as temp_file:
