@@ -20,7 +20,7 @@ for i in range(len(lines)):
 
 # Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
 with open('output.ws', 'w') as f:
-	for line in lines:
-		f.write(line)
+    for line in lines:
+        f.write(line)
 main(['output.ws'])
 os.remove('output.ws')
