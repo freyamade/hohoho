@@ -121,3 +121,26 @@ snow snow hohoho
 snow snow
 hohoho
 ```
+
+## Installation
+
+Believe it or not, this is actually on PyPI >.>
+
+```
+pip install hohoho
+```
+
+## Usage
+```
+usage: hohoho [-h] [--from-ws] input_file
+
+HoHoHo, the FESTIVE esolang! (powered by whitespace)
+
+positional arguments:
+  input_file     Input file. Should be a .ho file unless you're translating
+                 from whitespace to hohoho
+
+optional arguments:
+  -h, --help     show this help message and exit
+  --from-ws, -t  Translate an input whitespace file into a hohoho file.
+```
