@@ -7,11 +7,11 @@ def hohoho_to_whitespace(file_name):
 
 	# Converts 'hohoho' to \t
 	# Converts ' ' to ''
-	# Converts 'ho' to ' '
+	# Converts 'snow' to ' '
 	for i in range(len(lines)):
 	    lines[i] = lines[i].replace('hohoho', '\t')
 	    lines[i] = lines[i].replace(' ', '')
-	    lines[i] = lines[i].replace('ho', ' ')
+	    lines[i] = lines[i].replace('snow', ' ')
 
 	# Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
 	with open('output.ws', 'w') as f:

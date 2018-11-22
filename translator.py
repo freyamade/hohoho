@@ -6,7 +6,7 @@ def whitespace_to_hohoho(input_file_name,output_file_name):
     # Converts ' ' to ''
     # Converts 'ho' to ' '
     for i in range(len(lines)):
-        lines[i] = lines[i].replace(' ', 'ho ')
+        lines[i] = lines[i].replace(' ', 'snow ')
         lines[i] = lines[i].replace('\t', 'hohoho ')
 
 
