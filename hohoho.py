@@ -1,4 +1,5 @@
 from sys import argv
+from tempfile import NamedTemporaryFile
 from whitespace.cli import main
 
 # Take in a file
@@ -7,7 +8,6 @@ file_name = argv[-1]  # Assume for now it's just the last one
 with open(file_name) as input_file:
     lines = input_file.readlines()
 
-print(lines)
 # Convert `ho` to space
 # Convert `hohoho` to \t
 # Convert \n to \n
@@ -16,11 +16,8 @@ print(lines)
 # Replace ' ' with ''
 
 
-# Write to temp file
-
-# Run temp file with whitespace thingy
-
-# Delete tmp file
-
-# Done
-# main([file_name])
+# Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
+with NamedTemporaryFile() as temp_file:
+    for line in lines:
+        temp_file.write()
+    main([temp_file.name])
