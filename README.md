@@ -144,3 +144,6 @@ optional arguments:
   -h, --help     show this help message and exit
   --from-ws, -t  Translate an input whitespace file into a hohoho file.
 ```
+
+## Made By
+[@SuperOmario](https://github.com/SuperOmario) and I for the Netsoc Festive Hackathon 2018
