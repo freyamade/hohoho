@@ -1,13 +1,13 @@
-def whitespace_to_hohoho(input_file_name,output_file_name):
+def whitespace_to_boobooboo(input_file_name,output_file_name):
     with open(input_file_name) as input_file:
         lines = input_file.readlines()
 
-    # Converts 'hohoho' to \t
+    # Converts 'boobooboo' to \t
     # Converts ' ' to ''
-    # Converts 'ho' to ' '
+    # Converts 'boo' to ' '
     for i in range(len(lines)):
-        lines[i] = lines[i].replace(' ', 'snow ')
-        lines[i] = lines[i].replace('\t', 'hohoho ')
+        lines[i] = lines[i].replace(' ', 'spoopy ')
+        lines[i] = lines[i].replace('\t', 'boobooboo ')
 
 
     # Write the transpiled lines to a temp file and interpret that using the whitespace interpreter

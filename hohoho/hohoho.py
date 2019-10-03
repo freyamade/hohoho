@@ -1,7 +1,7 @@
 import os
 from whitespace.cli import main
 
-def hohoho_to_whitespace(file_name):
+def boobooboo_to_whitespace(file_name):
     with open(file_name) as input_file:
         lines = input_file.readlines()
 
@@ -9,9 +9,9 @@ def hohoho_to_whitespace(file_name):
     # Converts ' ' to ''
     # Converts 'snow' to ' '
     for i in range(len(lines)):
-        lines[i] = lines[i].replace('hohoho', '\t')
+        lines[i] = lines[i].replace('boobooboo', '\t')
         lines[i] = lines[i].replace(' ', '')
-        lines[i] = lines[i].replace('snow', ' ')
+        lines[i] = lines[i].replace('spoopy', ' ')
 
     # Write the transpiled lines to a temp file and interpret that using the whitespace interpreter
     with open('output.ws', 'w') as f:
